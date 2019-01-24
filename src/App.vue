@@ -1,9 +1,14 @@
 <template>
   <div class="app">
-    <div class="app__nav text-left font-l">
+    <div class="app__nav text-left f-space">
       <router-link to="/" v-show="$route.name !== 'home'">👈 Menu</router-link>
+      <button class="m-btn m-left-a" @click="showQR = !showQR">Show QR</button>
     </div>
     <router-view :list="pageItems"/>
+
+    <div v-if="showQR">
+      <qriously :value="pageUrl" :size="200"/>
+    </div>
   </div>
 </template>
 
@@ -101,9 +106,17 @@ const foodList = {
 
 export default {
   name: 'app',
+  data () {
+    return {
+      showQR: false
+    }
+  },
   computed: {
     pageItems () {
       return foodList[this.$route.params.section]
+    },
+    pageUrl () {
+      return location.href
     }
   }
 }
