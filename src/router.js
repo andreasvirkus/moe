@@ -16,6 +16,7 @@ export default new Router({
     {
       path: '/menu/:section',
       name: 'menu-page',
+      props: true,
       component: () => import(/* webpackChunkName: "menuPage" */ './views/MenuPage.vue')
     }
   ]

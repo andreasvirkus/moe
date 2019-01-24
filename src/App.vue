@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/" v-show="$route.name !== 'home'">Menu</router-link>
+  <div class="app">
+    <div class="app__nav text-left font-l">
+      <router-link to="/" v-show="$route.name !== 'home'">👈 Menu</router-link>
     </div>
     <router-view :list="pageItems"/>
   </div>
@@ -113,14 +113,15 @@ export default {
 <style src="@/styles/global.scss" lang="scss"></style>
 <style src="@/styles/utils.css"></style>
 <style lang="scss">
-#app {
+.app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+
+  &__nav {
+    padding: 30px;
+  }
 }
 </style>
