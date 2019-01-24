@@ -16,24 +16,24 @@
 const foodList = {
   appetizers: [
     {
-      name: 'Gin & tonic',
-      price: '6€',
-      ingredients: 'Gin, tonic, a classy lime'
+      name: 'Crutons',
+      price: '3€',
+      ingredients: 'Salted sticks'
     },
     {
-      name: 'Tom Collins',
-      price: '6€',
-      ingredients: 'Gin, sugar syrup, lemon juice, lemon'
+      name: 'Bread crumbs',
+      price: '2€',
+      ingredients: `Pretty much yesterday's leftovers`
     },
     {
-      name: 'White Russian',
+      name: `Caesar's salad`,
       price: '5.50€',
-      ingredients: 'USSR secret'
+      ingredients: 'Chicken, green, ...and more bread crumbs'
     },
     {
-      name: 'Whiskey sour',
-      price: '7€',
-      ingredients: 'You should be manly enough not to ask.'
+      name: 'Sweet potato chips',
+      price: '4€',
+      ingredients: 'These are actually quite tasty'
     }
   ],
   dishes: [
@@ -60,24 +60,19 @@ const foodList = {
   ],
   desserts: [
     {
-      name: 'Gin & tonic',
-      price: '6€',
-      ingredients: 'Gin, tonic, a classy lime'
+      name: 'A muffin',
+      price: '3€',
+      ingredients: `It's the last one`
     },
     {
-      name: 'Tom Collins',
-      price: '6€',
-      ingredients: 'Gin, sugar syrup, lemon juice, lemon'
+      name: `Grandma's cheese cake`,
+      price: '3.50€',
+      ingredients: '1 cheese, 1 cake.'
     },
     {
-      name: 'White Russian',
-      price: '5.50€',
+      name: 'Apple pie',
+      price: '4.50€',
       ingredients: 'USSR secret'
-    },
-    {
-      name: 'Whiskey sour',
-      price: '7€',
-      ingredients: 'You should be manly enough not to ask.'
     }
   ],
   drinks: [
